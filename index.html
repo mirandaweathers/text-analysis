@@ -1,0 +1,48 @@
+<head>
+    <title>Text Analyzer</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="analyzer">
+    <h1>Text Analyzer</h1>
+    <form id="form" onsubmit="analyzeText();">
+        <div class="analyzerParent">
+            
+            <div class="textbox"> 
+                <textarea id="text"></textarea>
+            </div>
+            <div class="analyzeBtn"> 
+                <button class="tabtn" id="btn" type="submit">Analyze it!</button>
+            </div>
+            <div class="resetBtn"> 
+                <button class="tabtn" id="reset" type="reset">Reset</button>
+            </div>
+            
+            <div class="wordCount">
+                <span id="wrdcount">0</span>
+                WORDS
+            </div>
+            <div class="uniqueCount">
+                <span id="unqcount">0</span>
+                UNIQUE WORDS
+            </div>
+            <div class="longCount"> 
+                <span id="lngcount">0</span>
+                LONG WORDS
+            </div>
+            <div class="sentenceCount">
+                <span id="sntcount">0</span> 
+                SENTENCES
+            </div>
+            <div class="numberCount"> 
+                <span id="numcount">0</span>
+                NUMBERS
+            </div>
+            <div class="mostFreqWord"> 
+                <span id="freqword">--</span>
+                MOST FREQUENT WORD
+            </div>
+        </div>
+    </form>
+    <a href="../index.html">ePortfolio</a>
+</body>
